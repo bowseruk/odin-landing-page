@@ -1,0 +1,99 @@
+/* Whole page settings */
+body {
+    --hero-background-color: #1F2937;
+    --hero-color: #F9FAF8;
+    --hero-secondary-color: #E5E7EB;
+    --button-cta-color: #3882F6;
+    --information-color: #1F2937;
+    --quote-background-color: #E5E7EB;
+    --quote-color: #1F2937;
+    font-family: 'roboto';
+    margin: 0;
+}
+/* Header */
+header, footer {
+    background-color: var(--hero-background-color);
+}
+
+header .brand {
+    color: var(--hero-color);
+    font-size: 24px;
+}
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    margin: 0;
+    padding: 5px;
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: var(--hero-color);
+}
+
+header p, header a, footer a {
+    font-size: 18px;
+    color: var(--hero-secondary-color);
+}
+
+button {
+    background-color: var(--button-cta-color);
+    color: white;
+    box-shadow: none;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 20px;
+}
+
+/* Information section */
+#infomration {
+    color: var(--information-color);
+}
+
+#information h2 {
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+#information .placeholder_pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 3px solid var(--button-cta-color);
+}
+/* Quote section */
+#quote {
+    background-color: var(--quote-background-color);
+}
+
+#quote p {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: var(--quote-color);
+}
+
+#quote span {
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/* Call to action section */
+#callToAction {
+    width: 80%;
+    background-color: var(--button-cta-color);
+    color: white;
+}
+
+#callToAction p {
+    color: var(--hero-secondary-color);
+    font-size: 18px;
+}
+
+#callToAction button {
+    border: 1px solid white;
+}
