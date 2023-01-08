@@ -10,6 +10,29 @@ body {
     font-family: 'roboto';
     margin: 0;
 }
+
+section {
+    margin: 0;
+    padding: 80px 0;
+}
+
+.row {
+    display: flex;
+    overflow: wrap;
+}
+
+.card {
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-items: center;
+}
+
+.card p, .card h2, .card h1, .card button {
+    margin: 3px;
+}
+
 /* Header */
 header, footer {
     background-color: var(--hero-background-color);
@@ -18,25 +41,67 @@ header, footer {
 header .brand {
     color: var(--hero-color);
     font-size: 24px;
+    font-weight: bold;
+    flex-grow: 1;
 }
+
+.header-card {
+    width: 40%;
+}
+
+.header-card label {
+    flex-grow: 1;
+}
+
+.container {
+    margin: 0 50px;
+}
+
+main .container {
+    margin: 0 100px;
+}
+
+nav {
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+}
+
 nav ul {
     list-style-type: none;
+    flex-grow: 2;
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav li {
     margin: 0;
     padding: 5px;
+    float: left;
 }
+
+
 
 header h1 {
     font-size: 48px;
-    font-weight: bolder;
+    font-weight: bold;
     color: var(--hero-color);
 }
 
-header p, header a, footer a {
+header p, header a, footer a, header .placeholder_pic {
     font-size: 18px;
     color: var(--hero-secondary-color);
+    text-decoration: none;
+}
+
+header .placeholder_pic {
+    width: 100%;
+    height: 100%;
+    background-color: slategrey;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-items: center;
 }
 
 button {
@@ -48,19 +113,35 @@ button {
     padding: 5px 20px;
 }
 
+
 /* Information section */
-#infomration {
+#information {
     color: var(--information-color);
 }
 
 #information h2 {
+    text-align: center;
+}
+
+#information .row {
+    align-items: center;
+}
+
+#information .card {
+    width: 150px;
+    flex-grow: none;
+    align-items: center;
+    text-align: center;
+}
+
+#information h2 {
     font-size: 36px;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 #information .placeholder_pic {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 10px;
     border: 3px solid var(--button-cta-color);
 }
@@ -72,21 +153,25 @@ button {
 #quote p {
     font-size: 36px;
     font-style: italic;
-    font-weight: lighter;
+    font-weight: 100;
     color: var(--quote-color);
 }
 
 #quote span {
     color: black;
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 20px;
 }
 
 /* Call to action section */
 #callToAction {
-    width: 80%;
     background-color: var(--button-cta-color);
     color: white;
+    padding: 30px;
+}
+
+#callToAction .card{
+    justify-content: center;
 }
 
 #callToAction p {
@@ -96,4 +181,25 @@ button {
 
 #callToAction button {
     border: 1px solid white;
+}
+
+/* footer */
+footer {
+    padding: 30px 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .row, nav {
+        flex-direction: column;
+    }
+
+    .container, main .container {
+        margin: 0 10px;
+    }
+
+    .header-card {
+        width: 100%;
+    }
+    
 }

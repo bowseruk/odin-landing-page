@@ -16,69 +16,82 @@
 
 <body>
     <header>
-        <nav>
-            <a class="brand">Header Logo</a>
-            <ul>
-                <li><a>header link one</a></li>
-                <li><a>header link two</a></li>
-                <li><a>header link three</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav>
+                <a class="brand">Header Logo</a>
+                <ul>
+                    <li><a>header link one</a></li>
+                    <li><a>header link two</a></li>
+                    <li><a>header link three</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section>
         <div class="container">
             <div class="row">
-                <div class=card>
+                <div class="card header-card">
                     <h1>This website is awesome</h1>
                     <p>This website has some subtext that goes here under the main title. It's a smaller font and the
                         color is lower contrast.</p>
                     <button>Sign up</button>
                 </div>
-                <div class=card>
-                    This is a placeholder for an image
+                <div class="card header-card">
+                    <div class="placeholder_pic"><label>This is a placeholder for an image</label></div>
                 </div>
             </div>
         </div>
+    </section>
     </header>
     <main>
         <section id="information">
-            <h2>Some random information</h2>
-            <div class="row">
-                <div class="card">
-                    <div class="placeholder_pic"></div>
-                    <p>this is some subtext under an illustration or image</p>
-                </div>
-                <div class="card">
-                    <div class="placeholder_pic"></div>
-                    <p>this is some subtext under an illustration or image</p>
-                </div>
-                <div class="card">
-                    <div class="placeholder_pic"></div>
-                    <p>this is some subtext under an illustration or image</p>
-                </div>
-                <div class="card">
-                    <div class="placeholder_pic"></div>
-                    <p>this is some subtext under an illustration or image</p>
+            <div class="container">
+                <h2>Some random information.</h2>
+                <div class="row">
+                    <div class="card">
+                        <div class="placeholder_pic"></div>
+                        <p>this is some subtext under an illustration or image</p>
+                    </div>
+                    <div class="card">
+                        <div class="placeholder_pic"></div>
+                        <p>this is some subtext under an illustration or image</p>
+                    </div>
+                    <div class="card">
+                        <div class="placeholder_pic"></div>
+                        <p>this is some subtext under an illustration or image</p>
+                    </div>
+                    <div class="card">
+                        <div class="placeholder_pic"></div>
+                        <p>this is some subtext under an illustration or image</p>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="quote">
-            <p>This is an inspiring quote, or a testimonal from a customer. Maybe it's just filling space, or maybe
-                people will actually read it. Who knows? All I know is that it looks nice.</p>
-            <span>-Thor, God of Thunder</span>
+            <div class="container">
+                <p>This is an inspiring quote, or a testimonal from a customer. Maybe it's just filling space, or maybe
+                    people will actually read it. Who knows? All I know is that it looks nice.</p>
+                <span>-Thor, God of Thunder</span>
+            </div>
         </section>
         <section>
-            <div id="callToAction">
-                <div>
-                    <h2>Call to action! It's time!</h2>
-                    <p>Sign up for our product by clicking that button right over there!</p>
+            <div class="container">
+                <div id="callToAction">
+                    <div class="row">
+                    <div class="card">
+                        <h2>Call to action! It's time!</h2>
+                        <p>Sign up for our product by clicking that button right over there!</p>
+                    </div>
+                    <div class="card">
+                        <button>Sign up</button>
+                    </div>
                 </div>
-                <div>
-                    <button>Sign up</button>
                 </div>
-            </div>
         </section>
     </main>
     <footer>
-        <a href="#">Adam Bolsover, 2023</a>
+        <div class="container">
+            <a href="#">&copy; Adam Bolsover, 2023</a>
+        </div>
     </footer>
 
 </body>
